@@ -4,6 +4,6 @@ require 'sinatra'
 
 class MyWebApp < Sinatra::Base
   get "/" do
-    "Look, a copyright notice! Copyright 2015-#{Time.now.year} Jerold Lewis."
+    send_file 'views/index.html'
   end
 end
